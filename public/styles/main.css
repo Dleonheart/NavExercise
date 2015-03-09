@@ -156,7 +156,7 @@ li.topElement>a{
 
 .overlay{
   background: rgba(0,0,0,0.5);
-  position:absolute;
+  position: fixed;
   top:0;
   left:0;
   width:100%;
@@ -168,6 +168,11 @@ li.topElement>a{
 
 .overlay.show{
   transform:translateY(0);
+}
+
+.copyRight {
+  visibility:hidden;
+  display: none;
 }
 
 /*==========  media query to handle mobile size  ==========*/
@@ -206,6 +211,7 @@ li.topElement>a{
     top:60px;
     height:100%;
     width:75%;
+    backface-visibility: hidden;
     transform: translateX(-100%);
 }
 
@@ -226,6 +232,16 @@ li.topElement>a{
     transition:all .3s ease-in-out;
 
   }
+
+  .copyRight{
+    visibility:visible;
+    display: block;
+    position:absolute;
+    bottom: 75px;
+    left: 24px;
+  
+    font: 12px/16px HelveticaNeueRegular sans-serif;
+}
 
   li.topElement:first-child:before{
      top:26px;
