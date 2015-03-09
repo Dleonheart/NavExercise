@@ -174,8 +174,7 @@ li.topElement>a{
 
 @media screen and (max-width: 767px) {
 
-  header{
-   position:relative;  
+  header{  
    width: 100%;
 }
 
@@ -350,7 +349,9 @@ li.topElement>a{
   }
   .mainNavigationContainer.pushed{
     transform:translateX(0);
-  }
+  
+    overflow: auto;
+}
   .mainContent.pushed {
     transform: translateX(75%);
   }
