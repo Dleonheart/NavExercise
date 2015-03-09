@@ -121,6 +121,7 @@
 			mainContent.classList.toggle('pushed');
 			overlay.classList.toggle('showMobile');
 			logoContainer.classList.toggle('showMobile');
+			clearSubNav();
 		}
 
 		/**
@@ -173,6 +174,7 @@
 
 			//haburger navigation event handler
 			hamburgerContainer.onclick = menuToggle;
+
 			//when overlay is clicked we toggle the menu
 			overlay.onclick = menuToggle;
 			
