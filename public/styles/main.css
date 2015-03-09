@@ -240,7 +240,8 @@ li.topElement>a{
     bottom: 75px;
     left: 24px;
   
-    font: 12px/16px HelveticaNeueRegular sans-serif;
+    font-family: 'HelveticaNeueRegular' sans-serif;
+    font-size: 12px;
 }
 
   li.topElement:first-child:before{
